@@ -1,0 +1,44 @@
+
+html, .checkout_form{
+  background-color: #8bb1d8;;
+ text-align: center;
+  height: 100%;
+  width: 100%
+}
+.img_container{
+  max-width:600px;
+  height: 120px;
+}
+.img_container img{
+  width: 50%;
+  height: auto
+}
+.hidden{
+  display: hidden;
+}
+.user_input{
+  text-align: center;
+  margin: 15% auto;
+  margin-top: 5%;
+  margin-bottom: 0px;
+  max-width: 600px;
+  background: white;
+  padding: 5%;
+  border-radius: 20px;
+}
+#card-errors{
+  max-width: 600px;
+ padding-top: 10px;
+  color: red;
+}
+.submit{
+  margin-top: 5%;
+  text-align: center;
+}
+button{
+  background-color: #e64a19;
+}
+.btn{
+  color: white;
+  border-radius: 20px
+}

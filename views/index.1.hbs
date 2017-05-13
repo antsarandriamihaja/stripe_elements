@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Payment Aria</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class='checkout_form'>
+
+
+
+        <form action="/getCardToken" method="post" id="payment-form" class='form-horizontal'>
+            <div class='user_input'>
+                <div class='img_container'>
+                    <img id='logo' src="http://apparia.co/img/aria-black.png" alt="aria_logo">
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="form-control" id="amount" placeholder="Amount to pay: $10.99" name="amount">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="cardholder-name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="card_info">
+                    <div id="card-element">
+                        <!-- a Stripe Element will be inserted here. -->
+                    </div>
+
+                </div>
+                <!-- Used to display Element errors -->
+                
+                    <div id="card-errors" role="alert"></div>
+            </div>
+
+            <div class="submit">
+
+                <button type="submit" class="btn btn-lg">Submit Payment</button>
+
+            </div>
+        </form>
+    </div>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/stripe.js"></script>
+</body>
+
+</html>
